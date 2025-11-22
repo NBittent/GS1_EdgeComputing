@@ -3,8 +3,7 @@
 //Pedro Chiarantano(rm:567396)
 // Global Solutions 2025 – Arduino UNO (Wokwi compatível)
 
-#include "DHT.h"  // ← WOKWI USA ESTA BIBLIOTECA
-
+#include "DHT.h"  
 // Sensor DHT22
 #define DHTPIN 7
 #define DHTTYPE DHT22
