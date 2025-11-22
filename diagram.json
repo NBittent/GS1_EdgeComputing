@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -20, "left": -20 },
+    { "type": "wokwi-dht22", "id": "dht", "top": 160, "left": -30 },
+    { "type": "wokwi-ldr-sensor", "id": "ldr", "top": 40, "left": 180 },
+    { "type": "wokwi-mq2-gas-sensor", "id": "mq2", "top": 40, "left": -180 },
+    { "type": "wokwi-button", "id": "btn", "top": 170, "left": 200 }
+  ],
+  "connections": [
+    ["dht:VCC", "uno:5V", "red"],
+    ["dht:GND", "uno:GND", "black"],
+    ["dht:DATA", "uno:7", "yellow"],
+
+    ["ldr:VCC", "uno:5V", "red"],
+    ["ldr:GND", "uno:GND", "black"],
+    ["ldr:SIG", "uno:A0", "green"],
+
+    ["mq2:VCC", "uno:5V", "red"],
+    ["mq2:GND", "uno:GND", "black"],
+    ["mq2:AO", "uno:A1", "green"],
+
+    ["btn:1", "uno:2", "green"],
+    ["btn:2", "uno:GND", "black"]
+  ]
+}
